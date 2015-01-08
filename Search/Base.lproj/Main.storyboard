@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="RA2-60-boa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="RA2-60-boa">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -13,12 +13,27 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="Ybl-Ia-jyU"/>
+                        <segue destination="nIb-Zc-L8l" kind="relationship" relationship="rootViewController" id="NJt-Hn-GVX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FRw-T6-ClO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-454" y="87"/>
+            <point key="canvasLocation" x="-454" y="156"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="dWI-Qn-xX4">
+            <objects>
+                <viewController id="nIb-Zc-L8l" customClass="TableViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uTi-Rb-TwD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zN5-gT-b4y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hUv-oi-1xH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-83" y="156"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -38,7 +53,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="qKn-SE-xyJ"/>
                     <connections>
-                        <outlet property="searchDisplayController" destination="uVY-16-uDN" id="eo9-wt-BO4"/>
                         <outlet property="tableView" destination="gXg-fl-THa" id="qGp-bt-0tj"/>
                     </connections>
                 </viewController>
@@ -52,7 +66,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="19" y="87"/>
+            <point key="canvasLocation" x="268" y="156"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
